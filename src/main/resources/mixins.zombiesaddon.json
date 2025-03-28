@@ -8,8 +8,6 @@
     "MixinClientCommandHandler",
     "MixinLayerCape",
     "MixinMainConfiguration",
-    "MixinModelBase",
-    "MixinModelBiped",
     "MixinModelPlayer",
     "MixinRender",
     "MixinRenderGameOverlayHandler",

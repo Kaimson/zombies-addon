@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(ModelPlayer.class)
-public abstract class MixinModelPlayer extends MixinModelBiped {
+public abstract class MixinModelPlayer {
     @Inject(method = "render", at = @At("HEAD"))
     private void za$preRender(Entity entityIn, float f, float g, float h, float i, float j, float scale, CallbackInfo ci) {
         if (ZombiesAddonConfig.isEnableMod() && PlayerVisibility.playerVisibility && ZombiesAddonConfig.isPlayerTranslucent() && PlayerVisibility.isPlayerInvisible(entityIn)) {
